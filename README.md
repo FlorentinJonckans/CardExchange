@@ -51,13 +51,13 @@ Les services sont un excellent moyen de partager des informations entre des clas
 Pour utiliser un service depuis un composant, il faut tout d'abord l'importer dans le fichier `app.module.ts` et le déclarer dans la section `providers`. Il faut également importer le service dans le composant dans lequel on souhaite l'utiliser. 
 
 Nous devons ensuite créer un constructeur afin de pouvoir effectuer une injection de constructeur Angular. Pour ceci, on va déclarer le service comme paramètre privé du constructeur en specifiant son type. Et on pourra ainsi utiliser toute la logique du service depuis ce composant.
-
+`
 export class QuoteBoxComponent {
   public quote = new Quote('', '');
   constructor(public quoteService: QuoteService) {
     ...
   }
-
+`
 ## 3. Installation
 
 Documentation : https://www.javatpoint.com/angular-8-installation .
