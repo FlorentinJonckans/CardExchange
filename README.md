@@ -110,6 +110,10 @@ Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous da
 
 Quand on lance l'application, nous accéderons au composant `home` par défaut et nous pouvons faire un lien vers `/quote`.
 
+## 6. Difficultés rencontrées
+
+
+
 ## 7. Références
 https://www.javatpoint.com/angular-8-installation<br>
 https://angular.io/<br>
