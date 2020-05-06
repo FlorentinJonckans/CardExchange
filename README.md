@@ -18,7 +18,28 @@ On peut imbriquer autant de composants que l'on souhaite.
 
 Un composant dans Angular sert à générer une partie de code `html` et fournir des fonctionnalités à celle-ci. C'est pour cela qu'un composant est constitué d'une classe dans laquelle on pourra définir la logique d'application pour ce composant avec des propriétés, des méthodes etc... .
 
-###### dshcbsgbjh
+### Pour ajouter un composant
+
+Dans une application Angular, il est recommandé d'imbriquer un ou plusieurs composants pour faciliter la visibilité de ces derniers.
+
+Avec la commande `ng generate component nomduComposant` à la racine du projet, un dossier avec le nom du composant va être créer dans lequel quatre autres fichiers vont être créer : un fichier .component.ts, .component.html, .component.css, .component.spec.ts .
+
+`.component.ts` = fichier dans lequel on aura une classe, propriétés ...
+`.component.html` = fichier servant à afficher la vue.
+`.component.css` = fichier appliquant une feuille de style sur la vue.
+`.component.spec.ts` = fichier pour faire des test sur le fichier `.component.ts`.
+
+### Afficher des données dans la vue
+
+Pour cela, nous allons nous servir de l'interpolation dans le `.component.html`, soit des doubles accolades qui rendra un contenu de type string sur notre vue.
+
+### Système d'événements
+
+Pour lier des évènements depuis le template vers le composant, on utilisera la syntaxe d'Angular prévue à cet effet. Par exemple, pour lier un "click" vers notre composant, on va insérer (click)="nomMethode()" dans la balise souhaitée et on déclarera également cette méthode dans notre composant qui contiendra la logique de l'action.
+
+### Système de service
+
+
 
 ## 3. Installation
 
