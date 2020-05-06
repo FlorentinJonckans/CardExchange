@@ -68,3 +68,43 @@ Pour vérifier que vous avez bien installé [NodeJs](https://nodejs.org/fr/), fa
 Une fois que vous avez bien installé [NodeJs](https://nodejs.org/fr/) dans l'invite de commande, tapez `npm install -g @angular/cli`.
 
 Vous pouvez vérifier que Angular est bien installé via la commande `ng --version`.
+
+## 4. Création d'une mini application Angular
+
+
+Le but de ce projet vise à générer de manière aléatoire, des citations d'auteurs.
+Pour cela nous allons utiliser les différentes fonctionnalités de Angular
+
+Tout d'abord, nous avons besoin de créer le projet pour cela `ng new votre_projet` par la suite nous aurons besoin d'installer deux packages via la commande npm
+
+-`npm install boostrap`
+-`npm install font-awesome`
+
+Nous allons créer un répertoire nommé models dans le src de notre projet puis nous allons créer un fichier quote.class.ts
+qui nous permettra d'instancier plus tard un objet Quote.
+
+Nous allons créer un répertoire nommé services dans le src de notre projet puis nous allons créer un fichier quote.service.ts
+dans laquelle nous allons créer une fonction qui nous permettra de récupérer des citations depuis le site [stormconsultancy](http://quotes.stormconsultancy.co.uk/random.json).
+
+Nous allons créer notre composant quote-box
+
+`ng g c quote-box` cette commande va nous générer automatiquement le composant quote-box avec un html, css, ts et spec.ts
+Dans le ts nous allons créer une fonction getQuote() afin d'instancier la class quote avec les données récupérer par le service.
+
+Dans le html il suffit d'utiliser l'objet quote afin de récupérer les données et les afficher.
+
+Pour ajouter des routes à notre projet il faudra dans app.module.ts dans imports
+
+`RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'quote',
+        component: QuoteBoxComponent
+      }
+    ]`
+path '' fait référence à un url vide et quote à un /quote
+Quand on lance l'application nous accéderons au composant home par défaut et nous pouvons faire un lien vers /quote.
+
