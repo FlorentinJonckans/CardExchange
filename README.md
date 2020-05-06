@@ -24,10 +24,10 @@ Dans une application Angular, il est recommandé d'imbriquer un ou plusieurs com
 
 Avec la commande `ng generate component nomduComposant` à la racine du projet, un dossier avec le nom du composant va être créer dans lequel quatre autres fichiers vont être créer : un fichier .component.ts, .component.html, .component.css, .component.spec.ts .
 
-`.component.ts` = fichier dans lequel on aura une classe, propriétés ... <br/>
-`.component.html` = fichier servant à afficher la vue.<br/>
-`.component.css` = fichier appliquant une feuille de style sur la vue.<br/>
-`.component.spec.ts` = fichier pour faire des test sur le fichier `.component.ts`.<br/>
+`.component.ts` = fichier dans lequel on aura une classe, propriétés ...
+`.component.html` = fichier servant à afficher la vue.
+`.component.css` = fichier appliquant une feuille de style sur la vue.
+`.component.spec.ts` = fichier pour faire des test sur le fichier `.component.ts`.
 
 ### Afficher des données dans la vue
 
@@ -51,13 +51,13 @@ Les services sont un excellent moyen de partager des informations entre des clas
 Pour utiliser un service depuis un composant, il faut tout d'abord l'importer dans le fichier `app.module.ts` et le déclarer dans la section `providers`. Il faut également importer le service dans le composant dans lequel on souhaite l'utiliser. 
 
 Nous devons ensuite créer un constructeur afin de pouvoir effectuer une injection de constructeur Angular. Pour ceci, on va déclarer le service comme paramètre privé du constructeur en specifiant son type. Et on pourra ainsi utiliser toute la logique du service depuis ce composant.
-
+`
 export class QuoteBoxComponent {
   public quote = new Quote('', '');
   constructor(public quoteService: QuoteService) {
     ...
   }
-
+`
 ## 3. Installation
 
 Documentation : https://www.javatpoint.com/angular-8-installation .
@@ -99,7 +99,7 @@ Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous da
 
 `RouterModule.forRoot([
       {
-        path: ''
+        path: '',
         component: HomeComponent
       },
       {
@@ -110,3 +110,9 @@ Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous da
 
 Quand on lance l'application, nous accéderons au composant `home` par défaut et nous pouvons faire un lien vers `/quote`.
 
+## 7. Références
+https://www.javatpoint.com/angular-8-installation
+https://angular.io/
+https://angular.io/docs
+https://nodejs.org/fr/
+http://quotes.stormconsultancy.co.uk/random.json
