@@ -18,7 +18,7 @@ On peut imbriquer autant de composants que l'on souhaite.
 
 Un composant dans Angular sert à générer une partie de code `html` et fournir des fonctionnalités à celle-ci. C'est pour cela qu'un composant est constitué d'une classe dans laquelle on pourra définir la logique d'application pour ce composant avec des propriétés, des méthodes etc... .
 
-#######dshcbsgbjh
+###### dshcbsgbjh
 
 ## 3. Installation
 
