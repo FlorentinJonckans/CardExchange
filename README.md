@@ -52,11 +52,11 @@ Pour utiliser un service depuis un composant, il faut tout d'abord l'importer da
 
 Nous devons ensuite créer un constructeur afin de pouvoir effectuer une injection de constructeur Angular. Pour ceci, on va déclarer le service comme paramètre privé du constructeur en specifiant son type. Et on pourra ainsi utiliser toute la logique du service depuis ce composant.
 `
-export class QuoteBoxComponent {
-  public quote = new Quote('', '');
-  constructor(public quoteService: QuoteService) {
-    ...
-  }
+export class QuoteBoxComponent {<br/>
+  public quote = new Quote('', '');<br/>
+  constructor(public quoteService: QuoteService) {<br/>
+    ...<br/>
+  }<br/>
 `
 ## 3. Installation
 
@@ -97,15 +97,15 @@ Dans le `.component.html`, il suffit d'utiliser l'objet `quote` afin de récupé
 
 Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous dans le fichier `app.module.ts` au niveau des imports.
 
-`RouterModule.forRoot([
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'quote',
-        component: QuoteBoxComponent
-      }
+`RouterModule.forRoot([<br/>
+      {<br/>
+        path: '',<br/>
+        component: HomeComponent<br/>
+      },<br/>
+      {<br/>
+        path: 'quote',<br/>
+        component: QuoteBoxComponent<br/>
+      }<br/>
     ]`
 
 Quand on lance l'application, nous accéderons au composant `home` par défaut et nous pouvons faire un lien vers `/quote`.
