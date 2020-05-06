@@ -110,13 +110,13 @@ Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous da
 
 Quand on lance l'application, nous accéderons au composant `home` par défaut et nous pouvons faire un lien vers `/quote`.
 
-## 6. Difficultés rencontrées
+## 5. Difficultés rencontrées
 Problème rencontré [href] dynamique : <br>
 [href] = "'https://twitter.com/intent/tweet\?text=' + quote.quote"<br>
 Solution : href="https://twitter.com/intent/tweet\?text={{quote.quote}} -{{quote.author}}"
 
 
-## 7. Références
+## 6. Références
 https://www.javatpoint.com/angular-8-installation<br>
 https://angular.io/<br>
 https://angular.io/docs<br>
