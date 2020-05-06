@@ -39,7 +39,24 @@ Pour lier des évènements depuis le template vers le composant, on utilisera la
 
 ### Système de service
 
+Les composants ne doivent pas ni récupérer ni enregistrer directement les données. Ils doivent uniquement se concentrer sur la présentation des données. 
 
+Pour ce faire, nous allons déléguer l'accès aux données à un service.
+La commande `ng generate service nomDuService` permet de créer un service.
+
+Les services sont un excellent moyen de partager des informations entre des classes qui ne se connaissent pas. 
+
+### Utilisation d'un service
+
+Pour utiliser un service depuis un composant, il faut tout d'abord l'importer dans le fichier `app.module.ts` et le déclarer dans la section `providers`. Il faut également importer le service dans le composant dans lequel on souhaite l'utiliser. 
+
+Nous devons ensuite créer un constructeur afin de pouvoir effectuer une injection de constructeur Angular. Pour ceci, on va déclarer le service comme paramètre privé du constructeur en specifiant son type. Et on pourra ainsi utiliser toute la logique du service depuis ce composant.
+
+export class QuoteBoxComponent {
+  public quote = new Quote('', '');
+  constructor(public quoteService: QuoteService) {
+    ...
+  }
 
 ## 3. Installation
 
