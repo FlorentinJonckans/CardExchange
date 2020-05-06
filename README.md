@@ -7,7 +7,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## 3. Installation
 
 Pour installer Angular, il faut d'abord installer [NodeJs](https://nodejs.org/fr/).
-Pour vérifier que vous avez bien installé NodeJs fait la combinaison `Windows+r` puis tapez `cmd` pour ouvrir l'invite de commande, ou vous pourrez entrer la commande `node -v`
+Pour vérifier que vous avez bien installé [NodeJs](https://nodejs.org/fr/), faites la combinaison `Windows+r` puis tapez `cmd` pour ouvrir l'invite de commande, et entrez la commande `node -v`.
 
-Une fois que vous avez bien installé NodeJs dans l'invite de commande tapez `npm install -g @angular/cli`
-Vous pouvez vérifier que Angular est bien installé via la commande `ng --version`
+Une fois que vous avez bien installé [NodeJs](https://nodejs.org/fr/) dans l'invite de commande, tapez `npm install -g @angular/cli`.
+Vous pouvez vérifier que Angular est bien installé via la commande `ng --version`.
