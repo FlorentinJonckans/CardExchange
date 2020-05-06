@@ -24,10 +24,10 @@ Dans une application Angular, il est recommandé d'imbriquer un ou plusieurs com
 
 Avec la commande `ng generate component nomduComposant` à la racine du projet, un dossier avec le nom du composant va être créer dans lequel quatre autres fichiers vont être créer : un fichier .component.ts, .component.html, .component.css, .component.spec.ts .
 
-`.component.ts` = fichier dans lequel on aura une classe, propriétés ...
-`.component.html` = fichier servant à afficher la vue.
-`.component.css` = fichier appliquant une feuille de style sur la vue.
-`.component.spec.ts` = fichier pour faire des test sur le fichier `.component.ts`.
+`.component.ts` = fichier dans lequel on aura une classe, propriétés ... <br/>
+`.component.html` = fichier servant à afficher la vue.<br/>
+`.component.css` = fichier appliquant une feuille de style sur la vue.<br/>
+`.component.spec.ts` = fichier pour faire des test sur le fichier `.component.ts`.<br/>
 
 ### Afficher des données dans la vue
 
