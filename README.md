@@ -112,7 +112,7 @@ Quand on lance l'application, nous accéderons au composant `home` par défaut e
 
 ## 7. Références
 https://www.javatpoint.com/angular-8-installation<br>
-https://angular.io/
-https://angular.io/docs
-https://nodejs.org/fr/
+https://angular.io/<br>
+https://angular.io/docs<br>
+https://nodejs.org/fr/<br>
 http://quotes.stormconsultancy.co.uk/random.json
