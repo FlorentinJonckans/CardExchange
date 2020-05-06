@@ -73,27 +73,29 @@ Vous pouvez vérifier que Angular est bien installé via la commande `ng --versi
 
 
 Le but de ce projet vise à générer de manière aléatoire, des citations d'auteurs.
-Pour cela nous allons utiliser les différentes fonctionnalités de Angular
+Pour cela, nous allons utiliser les différentes fonctionnalités de [Angular](https://angular.io/).
 
-Tout d'abord, nous avons besoin de créer le projet pour cela `ng new votre_projet` par la suite nous aurons besoin d'installer deux packages via la commande npm
+Tout d'abord, nous avons besoin de créer le projet grâce à la commande `ng new votre_projet`.
+ensuite, nous aurons besoin d'installer deux packages via la commande npm :
 
--`npm install boostrap`
--`npm install font-awesome`
+-`npm install boostrap`.
+-`npm install font-awesome`.
 
-Nous allons créer un répertoire nommé models dans le src de notre projet puis nous allons créer un fichier quote.class.ts
-qui nous permettra d'instancier plus tard un objet Quote.
+Nous allons créer un répertoire nommé `models` dans le src de notre projet puis nous allons créer un fichier `quote.class.ts`
+qui nous permettra d'instancier plus tard un objet `Quote`.
 
-Nous allons créer un répertoire nommé services dans le src de notre projet puis nous allons créer un fichier quote.service.ts
-dans laquelle nous allons créer une fonction qui nous permettra de récupérer des citations depuis le site [stormconsultancy](http://quotes.stormconsultancy.co.uk/random.json).
+Nous allons créer un répertoire nommé `services` dans le src de notre projet.
+Puis, nous allons créer un fichier `quote.service.ts` dans laquelle nous allons créer une fonction qui nous permettra de récupérer des citations depuis le site [stormconsultancy](http://quotes.stormconsultancy.co.uk/random.json).
 
-Nous allons créer notre composant quote-box
+Maintenant, nous allons créer notre composant `quote-box`.
 
-`ng g c quote-box` cette commande va nous générer automatiquement le composant quote-box avec un html, css, ts et spec.ts
-Dans le ts nous allons créer une fonction getQuote() afin d'instancier la class quote avec les données récupérer par le service.
+La commande `ng g c quote-box` va nous générer automatiquement le composant `quote-box` avec un fichier `.component.html`, `.component.css`, `.component.ts` et `.component.spec.ts`.
 
-Dans le html il suffit d'utiliser l'objet quote afin de récupérer les données et les afficher.
+Dans le fichier `.component.ts`, nous allons créer une fonction getQuote() afin d'instancier la class `quote` avec les données récupérer par le service.
 
-Pour ajouter des routes à notre projet il faudra dans app.module.ts dans imports
+Dans le `.component.html`, il suffit d'utiliser l'objet `quote` afin de récupérer les données et les afficher.
+
+Pour ajouter des routes à notre projet, il faudra ajouter le code ci-dessous dans le fichier `app.module.ts` au niveau des imports.
 
 `RouterModule.forRoot([
       {
@@ -105,6 +107,6 @@ Pour ajouter des routes à notre projet il faudra dans app.module.ts dans import
         component: QuoteBoxComponent
       }
     ]`
-path '' fait référence à un url vide et quote à un /quote
-Quand on lance l'application nous accéderons au composant home par défaut et nous pouvons faire un lien vers /quote.
+
+Quand on lance l'application, nous accéderons au composant `home` par défaut et nous pouvons faire un lien vers `/quote`.
 
