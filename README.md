@@ -10,4 +10,5 @@ Pour installer Angular, il faut d'abord installer [NodeJs](https://nodejs.org/fr
 Pour vérifier que vous avez bien installé [NodeJs](https://nodejs.org/fr/), faites la combinaison `Windows+r` puis tapez `cmd` pour ouvrir l'invite de commande, et entrez la commande `node -v`.
 
 Une fois que vous avez bien installé [NodeJs](https://nodejs.org/fr/) dans l'invite de commande, tapez `npm install -g @angular/cli`.
+
 Vous pouvez vérifier que Angular est bien installé via la commande `ng --version`.
