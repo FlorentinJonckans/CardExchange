@@ -3,6 +3,9 @@
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## 1. Introduction
+
+Bonjour, nous vous présentons un projet réalisé avec le framework [Angular](https://angular.io/). Le but de ce projet vise à générer de manière aléatoire, des citations d'auteurs.
 
 ## 3. Installation
 
