@@ -9,7 +9,16 @@ Bonjour, nous vous présentons un projet réalisé avec le framework Javascript 
 
 ## 2. Principes de fonctionnement
 
+Angular est un framework Javascript côté client qui permet de réaliser des applications de type "Single Page Application". 
 
+Ce framework est basé sur une architecture de composants indépendants les uns des autres. 
+Une fois le composant principal chargé, il analyse la vue `html` correspondant à celui-ci et détecte s'il comporte d'autres composants. Si c'est le cas, Angular va trouver toutes les correspondances et exécuter le code lié à celles-ci. 
+
+On peut imbriquer autant de composants que l'on souhaite.
+
+Un composant dans Angular sert à générer une partie de code `html` et fournir des fonctionnalités à celle-ci. C'est pour cela qu'un composant est constitué d'une classe dans laquelle on pourra définir la logique d'application pour ce composant avec des propriétés, des méthodes etc... .
+
+#######dshcbsgbjh
 
 ## 3. Installation
 
