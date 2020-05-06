@@ -91,7 +91,7 @@ Maintenant, nous allons créer notre composant `quote-box`.
 
 La commande `ng g c quote-box` va nous générer automatiquement le composant `quote-box` avec un fichier `.component.html`, `.component.css`, `.component.ts` et `.component.spec.ts`.
 
-Dans le fichier `.component.ts`, nous allons créer une fonction getQuote() afin d'instancier la class `quote` avec les données récupérer par le service.
+Dans le fichier `.component.ts`, nous allons créer une fonction `getQuote()` afin d'instancier la class `quote` avec les données récupérer par le service.
 
 Dans le `.component.html`, il suffit d'utiliser l'objet `quote` afin de récupérer les données et les afficher.
 
