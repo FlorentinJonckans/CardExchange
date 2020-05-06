@@ -5,7 +5,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## 1. Introduction
 
-Bonjour, nous vous présentons un projet réalisé avec le framework [Angular](https://angular.io/). Le but de ce projet vise à générer de manière aléatoire, des citations d'auteurs.
+Bonjour, nous vous présentons un projet réalisé avec le framework Javascript [Angular](https://angular.io/). Le but de ce projet vise à générer de manière aléatoire, des citations d'auteurs.
+
+## 2. Principes de fonctionnement
+
+
 
 ## 3. Installation
 
