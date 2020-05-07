@@ -110,7 +110,9 @@ Quand on lance l'application, nous accéderons au composant `home` par défaut e
 ## 5. Comparaison avec React
 
 Angular peut gérer l'injection de dépendances .
+
 Documentation bien écrite.
+
 Composant séparé en plusieurs parties.
 
 ## 6. Difficultés rencontrées
